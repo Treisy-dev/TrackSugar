@@ -1,0 +1,97 @@
+import SnapKit
+import UIKit
+
+final class UserNameSubView: UIView {
+
+    private lazy var profileVStack: UIStackView = UIStackView()
+    private lazy var profileLable: UILabel = UILabel()
+    private lazy var nameHStack: UIStackView = UIStackView()
+    private lazy var nameLable: UILabel = UILabel()
+    private lazy var nameIconImageView: UIImageView = UIImageView()
+    private lazy var emailHStack: UIStackView = UIStackView()
+    private lazy var emailLabel: UILabel = UILabel()
+    private lazy var emailIconImageView: UIImageView = UIImageView()
+    private lazy var underlineView: CustomUnderlineView = CustomUnderlineView(
+        frame: CGRect(x: 0, y: 0, width: 200, height: 1))
+
+    init(frame: CGRect, name: String, email: String) {
+        super.init(frame: frame)
+        backgroundColor = .white
+        setUp()
+        nameLable.text = name
+        emailLabel.text = email
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    private func setUp() {
+        setUpProfileVStack()
+    }
+
+    private func setUpNameHStack() {
+        nameHStack.axis = .horizontal
+        nameHStack.spacing = 10
+
+        nameIconImageView.image = UIImage.personIcon
+        nameIconImageView.contentMode = .center
+        nameIconImageView.snp.makeConstraints { make in
+            make.width.equalTo(25)
+        }
+        nameHStack.addArrangedSubview(nameIconImageView)
+
+        nameLable.font = UIFont.systemFont(ofSize: 16)
+        nameLable.textColor = .black
+        nameLable.minimumScaleFactor = 0.5
+        nameLable.adjustsFontSizeToFitWidth = true
+        nameLable.snp.makeConstraints { make in
+            make.width.lessThanOrEqualTo(160)
+        }
+        nameHStack.addArrangedSubview(nameLable)
+    }
+
+    private func setUpEmailHStack() {
+        emailHStack.axis = .horizontal
+        emailHStack.spacing = 10
+        emailHStack.distribution = .equalSpacing
+        emailIconImageView.image = UIImage.emailIcon
+        emailIconImageView.contentMode = .center
+        emailIconImageView.snp.makeConstraints { make in
+            make.width.equalTo(25)
+        }
+        emailHStack.addArrangedSubview(emailIconImageView)
+
+        emailLabel.font = UIFont.systemFont(ofSize: 16)
+        emailLabel.textColor = .black
+        emailLabel.minimumScaleFactor = 0.5
+        emailLabel.adjustsFontSizeToFitWidth = true
+        emailLabel.snp.makeConstraints { make in
+            make.width.lessThanOrEqualTo(160)
+        }
+        emailHStack.addArrangedSubview(emailLabel)
+    }
+
+    private func setUpProfileVStack() {
+        setUpNameHStack()
+        setUpEmailHStack()
+        addSubview(profileVStack)
+        profileLable.text = "Профиль:"
+        profileLable.font = UIFont.systemFont(ofSize: 16)
+        profileLable.textColor = .black
+        profileVStack.axis = .vertical
+        profileVStack.distribution = .fillEqually
+        profileVStack.spacing = 10
+        profileVStack.addArrangedSubview(profileLable)
+        profileVStack.addArrangedSubview(nameHStack)
+        profileVStack.addArrangedSubview(emailHStack)
+        profileVStack.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        addSubview(underlineView)
+        underlineView.snp.makeConstraints { make in
+            make.top.equalTo(profileVStack.snp_bottomMargin).offset(20)
+            make.leading.equalTo(profileVStack.snp_leadingMargin)
+        }
+    }
+}

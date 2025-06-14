@@ -1,0 +1,1417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C31D16722BC753E6004A133F /* ProductConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D16712BC753E6004A133F /* ProductConfigView.swift */; };
+		C31D16742BC753FF004A133F /* ProfuctConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D16732BC753FF004A133F /* ProfuctConfigViewController.swift */; };
+		C31D16762BC7540E004A133F /* ProductConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D16752BC7540E004A133F /* ProductConfigViewModel.swift */; };
+		C31D16782BC75AFE004A133F /* CustomCircledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D16772BC75AFE004A133F /* CustomCircledView.swift */; };
+		C31D167A2BC77999004A133F /* UserProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D16792BC77999004A133F /* UserProductModel.swift */; };
+		C31D167C2BC783C3004A133F /* UserProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D167B2BC783C3004A133F /* UserProductTableViewCell.swift */; };
+		C31D167F2BC7D97A004A133F /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D167E2BC7D97A004A133F /* UIButtonExtensions.swift */; };
+		C31D171E2BD0F76C004A133F /* NewUserProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D171D2BD0F76C004A133F /* NewUserProductViewController.swift */; };
+		C31D17202BD0F775004A133F /* NewUserProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D171F2BD0F775004A133F /* NewUserProductView.swift */; };
+		C31D17222BD0F77F004A133F /* NewUserProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D17212BD0F77F004A133F /* NewUserProductViewModel.swift */; };
+		C31D17242BD1B2D1004A133F /* NewProductInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D17232BD1B2D1004A133F /* NewProductInputView.swift */; };
+		C333ABA02B9F09BF00EA100E /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB9F2B9F09BF00EA100E /* CustomGradientView.swift */; };
+		C333ABA22B9F820700EA100E /* CustomUnderlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABA12B9F820700EA100E /* CustomUnderlineView.swift */; };
+		C333ABA62B9FBBD900EA100E /* PreferencesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABA52B9FBBD900EA100E /* PreferencesSubView.swift */; };
+		C333ABA82B9FC5AB00EA100E /* UserNameSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABA72B9FC5AB00EA100E /* UserNameSubView.swift */; };
+		C333ABAA2B9FC79300EA100E /* PreferencesHStackFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABA92B9FC79300EA100E /* PreferencesHStackFabric.swift */; };
+		C333ABAD2B9FCA9200EA100E /* UserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABAC2B9FCA9200EA100E /* UserDefaultsDataManager.swift */; };
+		C333ABB02BA0F4DD00EA100E /* MainAppTabBarFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABAF2BA0F4DD00EA100E /* MainAppTabBarFabric.swift */; };
+		C333ABB22BA2417600EA100E /* DragSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABB12BA2417600EA100E /* DragSubView.swift */; };
+		C333ABB42BA2534A00EA100E /* SettingsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABB32BA2534A00EA100E /* SettingsSubView.swift */; };
+		C333ABB62BA2549400EA100E /* CustomLanguageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABB52BA2549400EA100E /* CustomLanguageTextField.swift */; };
+		C333ABBA2BA326D000EA100E /* NewNoteSugarSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABB92BA326D000EA100E /* NewNoteSugarSubView.swift */; };
+		C333ABBC2BA37A8A00EA100E /* NewNoteFoodSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABBB2BA37A8A00EA100E /* NewNoteFoodSubView.swift */; };
+		C333ABC12BA37D9000EA100E /* CustomAddFoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABC02BA37D9000EA100E /* CustomAddFoodButton.swift */; };
+		C333ABC42BA636F700EA100E /* NewNoteInjectionSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABC32BA636F700EA100E /* NewNoteInjectionSubView.swift */; };
+		C333ABC72BA7476F00EA100E /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABC62BA7476F00EA100E /* UIImageExtensions.swift */; };
+		C3607D392BF37BEA004595BD /* TemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D382BF37BEA004595BD /* TemplateCollectionViewCell.swift */; };
+		C3607D3B2BF383C5004595BD /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D3A2BF383C5004595BD /* UICollectionViewExtensions.swift */; };
+		C3607D3D2BF383F9004595BD /* NewTemplateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D3C2BF383F9004595BD /* NewTemplateCollectionViewCell.swift */; };
+		C3607D402BF389FC004595BD /* NewTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D3F2BF389FC004595BD /* NewTemplateView.swift */; };
+		C3607D442BF38A13004595BD /* NewTemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D432BF38A13004595BD /* NewTemplateViewModel.swift */; };
+		C3607D462BF38AC2004595BD /* NewTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D452BF38AC2004595BD /* NewTemplateViewController.swift */; };
+		C3607D492BF3928E004595BD /* NewTemplateFoodSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D482BF3928E004595BD /* NewTemplateFoodSubView.swift */; };
+		C3607D4B2BF3A207004595BD /* NewTemplateInjectionSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D4A2BF3A207004595BD /* NewTemplateInjectionSubView.swift */; };
+		C3607D4D2BF3A55F004595BD /* NewTemplateStatsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D4C2BF3A55F004595BD /* NewTemplateStatsSubView.swift */; };
+		C3607D502BF4098B004595BD /* ProductCategoriesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D4F2BF4098B004595BD /* ProductCategoriesEnum.swift */; };
+		C3607D522BF409B5004595BD /* TemplateCategoriesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D512BF409B5004595BD /* TemplateCategoriesEnum.swift */; };
+		C3607D542BF80A16004595BD /* SugarStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D532BF80A16004595BD /* SugarStateEnum.swift */; };
+		C3607D562BF8DE65004595BD /* MainAppModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D552BF8DE65004595BD /* MainAppModuleFactory.swift */; };
+		C3607D592BF8EBC7004595BD /* WelcomeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D582BF8EBC7004595BD /* WelcomeModuleFactory.swift */; };
+		C3607D5B2BF8EC7B004595BD /* TabBarModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3607D5A2BF8EC7B004595BD /* TabBarModuleFactory.swift */; };
+		C364B5282BB48CFC00AC1CB3 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5272BB48CFC00AC1CB3 /* ProductView.swift */; };
+		C364B52A2BB48D0600AC1CB3 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5292BB48D0600AC1CB3 /* ProductViewController.swift */; };
+		C364B52C2BB48D1500AC1CB3 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B52B2BB48D1500AC1CB3 /* ProductViewModel.swift */; };
+		C364B5302BB49BC700AC1CB3 /* UIButtonFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B52F2BB49BC700AC1CB3 /* UIButtonFabric.swift */; };
+		C364B5332BB4A82200AC1CB3 /* TranslationNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5322BB4A82200AC1CB3 /* TranslationNetworkService.swift */; };
+		C364B5382BB4B97300AC1CB3 /* TranslationAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5372BB4B97300AC1CB3 /* TranslationAPIModel.swift */; };
+		C364B53A2BB4C40600AC1CB3 /* ProductAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5392BB4C40600AC1CB3 /* ProductAPIModel.swift */; };
+		C364B53C2BB4CD7200AC1CB3 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B53B2BB4CD7200AC1CB3 /* ProductTableViewCell.swift */; };
+		C364B53F2BB4D2BA00AC1CB3 /* ProductVStackFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B53E2BB4D2BA00AC1CB3 /* ProductVStackFabric.swift */; };
+		C364B5412BB4D65A00AC1CB3 /* ProductNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5402BB4D65A00AC1CB3 /* ProductNetworkService.swift */; };
+		C364B54F2BB9967300AC1CB3 /* PushNotification+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5432BB9967300AC1CB3 /* PushNotification+CoreDataClass.swift */; };
+		C364B5502BB9967300AC1CB3 /* PushNotification+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5442BB9967300AC1CB3 /* PushNotification+CoreDataProperties.swift */; };
+		C364B5512BB9967300AC1CB3 /* Templates+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5452BB9967300AC1CB3 /* Templates+CoreDataClass.swift */; };
+		C364B5522BB9967300AC1CB3 /* Templates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5462BB9967300AC1CB3 /* Templates+CoreDataProperties.swift */; };
+		C364B5532BB9967300AC1CB3 /* UserProducts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5472BB9967300AC1CB3 /* UserProducts+CoreDataClass.swift */; };
+		C364B5542BB9967300AC1CB3 /* UserProducts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5482BB9967300AC1CB3 /* UserProducts+CoreDataProperties.swift */; };
+		C364B5552BB9967300AC1CB3 /* ProductTypes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5492BB9967300AC1CB3 /* ProductTypes+CoreDataClass.swift */; };
+		C364B5562BB9967300AC1CB3 /* ProductTypes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B54A2BB9967300AC1CB3 /* ProductTypes+CoreDataProperties.swift */; };
+		C364B5572BB9967300AC1CB3 /* NotesHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B54B2BB9967300AC1CB3 /* NotesHistory+CoreDataClass.swift */; };
+		C364B5582BB9967300AC1CB3 /* NotesHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B54C2BB9967300AC1CB3 /* NotesHistory+CoreDataProperties.swift */; };
+		C364B5592BB9967300AC1CB3 /* TemplateProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B54D2BB9967300AC1CB3 /* TemplateProduct+CoreDataClass.swift */; };
+		C364B55A2BB9967300AC1CB3 /* TemplateProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B54E2BB9967300AC1CB3 /* TemplateProduct+CoreDataProperties.swift */; };
+		C364B55D2BB999E600AC1CB3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B55C2BB999E600AC1CB3 /* CoreDataManager.swift */; };
+		C364B55F2BB9F43700AC1CB3 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B55E2BB9F43700AC1CB3 /* UITableViewExtensions.swift */; };
+		C364B5642BBC94BA00AC1CB3 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = C364B5632BBC94BA00AC1CB3 /* Swinject */; };
+		C364B5672BBC959A00AC1CB3 /* MainAppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5662BBC959A00AC1CB3 /* MainAppAssembly.swift */; };
+		C364B56D2BBD60C100AC1CB3 /* WelcomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B56C2BBD60C100AC1CB3 /* WelcomeFlowCoordinator.swift */; };
+		C364B5702BBD696C00AC1CB3 /* NewNoteScreenFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B56F2BBD696C00AC1CB3 /* NewNoteScreenFlowCoordinator.swift */; };
+		C364B5722BBD69B000AC1CB3 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5712BBD69B000AC1CB3 /* CoordinatorProtocol.swift */; };
+		C364B5742BBD778D00AC1CB3 /* TemplateScreenFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5732BBD778D00AC1CB3 /* TemplateScreenFlowCoordinator.swift */; };
+		C3666A682BE57C7500BA9551 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A672BE57C7500BA9551 /* NotificationTableViewCell.swift */; };
+		C3666A6B2BE58D7C00BA9551 /* NotificationConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A6A2BE58D7C00BA9551 /* NotificationConfigViewController.swift */; };
+		C3666A6D2BE58D8B00BA9551 /* NotificationConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A6C2BE58D8B00BA9551 /* NotificationConfigView.swift */; };
+		C3666A6F2BE58D9700BA9551 /* NotificationConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A6E2BE58D9700BA9551 /* NotificationConfigViewModel.swift */; };
+		C3666A722BE5A5B000BA9551 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A712BE5A5B000BA9551 /* PushNotificationManager.swift */; };
+		C3666A752BE7D0DB00BA9551 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = C3666A742BE7D0DB00BA9551 /* DGCharts */; };
+		C3666A782BE7F21C00BA9551 /* CustomSugarStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A772BE7F21C00BA9551 /* CustomSugarStatisticView.swift */; };
+		C3666A7A2BE8095000BA9551 /* CustomFoodStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A792BE8095000BA9551 /* CustomFoodStatisticView.swift */; };
+		C3666A7C2BE954C700BA9551 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A7B2BE954C700BA9551 /* HistoryTableViewCell.swift */; };
+		C3666A7F2BEAA5E100BA9551 /* ChartSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A7E2BEAA5E100BA9551 /* ChartSubView.swift */; };
+		C3666A812BEAB5A900BA9551 /* SugarStatsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A802BEAB5A900BA9551 /* SugarStatsSubView.swift */; };
+		C3666A832BEAB82A00BA9551 /* FoodStatsSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A822BEAB82A00BA9551 /* FoodStatsSubView.swift */; };
+		C3666A852BEAE04C00BA9551 /* DGChartsCustomFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3666A842BEAE04C00BA9551 /* DGChartsCustomFormater.swift */; };
+		C391D6362DFDC34800027440 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C391D6352DFDC34800027440 /* SnapKit */; };
+		C391D6382DFDC9E500027440 /* SugarAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D6372DFDC9E500027440 /* SugarAnalysisView.swift */; };
+		C391D63C2DFDCA0900027440 /* SugarAnalysisEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D63B2DFDCA0900027440 /* SugarAnalysisEnum.swift */; };
+		C391D64E2DFDD3DE00027440 /* TrackSugarWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C391D6412DFDD3DC00027440 /* TrackSugarWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C391D6612DFDE33100027440 /* SugarAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D6602DFDE33100027440 /* SugarAnalysisManager.swift */; };
+		C391D6632DFDE6F200027440 /* NewNotePhysicalActivitySubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D6622DFDE6F200027440 /* NewNotePhysicalActivitySubView.swift */; };
+		C391D6772DFE0E8D00027440 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391D6702DFE0E8D00027440 /* Preview Assets.xcassets */; };
+		C391D6782DFE0E8D00027440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391D6722DFE0E8D00027440 /* Assets.xcassets */; };
+		C391D6792DFE0E8D00027440 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D6732DFE0E8D00027440 /* ContentView.swift */; };
+		C391D67A2DFE0E8D00027440 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391D6752DFE0E8D00027440 /* WatchApp.swift */; };
+		C3DCF9AC2B9DF31A007D7FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9AB2B9DF31A007D7FF0 /* AppDelegate.swift */; };
+		C3DCF9AE2B9DF31A007D7FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9AD2B9DF31A007D7FF0 /* SceneDelegate.swift */; };
+		C3DCF9B62B9DF31A007D7FF0 /* TrackSugar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9B42B9DF31A007D7FF0 /* TrackSugar.xcdatamodeld */; };
+		C3DCF9B82B9DF31B007D7FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DCF9B72B9DF31B007D7FF0 /* Assets.xcassets */; };
+		C3DCF9BB2B9DF31B007D7FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DCF9B92B9DF31B007D7FF0 /* LaunchScreen.storyboard */; };
+		C3DCF9CA2B9DF4DB007D7FF0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3DCF9C92B9DF4DB007D7FF0 /* Alamofire */; };
+		C3DCF9D02B9DF588007D7FF0 /* NameRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9CF2B9DF588007D7FF0 /* NameRegisterViewController.swift */; };
+		C3DCF9D22B9DF5A4007D7FF0 /* NameRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9D12B9DF5A4007D7FF0 /* NameRegisterView.swift */; };
+		C3DCF9D42B9DF5BA007D7FF0 /* NameRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9D32B9DF5BA007D7FF0 /* NameRegisterViewModel.swift */; };
+		C3DCF9D72B9E039E007D7FF0 /* SugarConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9D62B9E039E007D7FF0 /* SugarConfigView.swift */; };
+		C3DCF9D92B9E03AB007D7FF0 /* SugarConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9D82B9E03AB007D7FF0 /* SugarConfigViewController.swift */; };
+		C3DCF9DB2B9E03CD007D7FF0 /* SugarConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9DA2B9E03CD007D7FF0 /* SugarConfigViewModel.swift */; };
+		C3DCF9DD2B9E0B0D007D7FF0 /* CustomConfigTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9DC2B9E0B0D007D7FF0 /* CustomConfigTextField.swift */; };
+		C3DCF9E12B9E19A2007D7FF0 /* FoodConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9E02B9E19A2007D7FF0 /* FoodConfigViewController.swift */; };
+		C3DCF9E32B9E19AD007D7FF0 /* FoodConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9E22B9E19AD007D7FF0 /* FoodConfigViewModel.swift */; };
+		C3DCF9E52B9E19BE007D7FF0 /* FoodConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9E42B9E19BE007D7FF0 /* FoodConfigView.swift */; };
+		C3DCF9E82B9E337F007D7FF0 /* InsulinConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9E72B9E337F007D7FF0 /* InsulinConfigView.swift */; };
+		C3DCF9EA2B9E338D007D7FF0 /* InsulinConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9E92B9E338D007D7FF0 /* InsulinConfigViewController.swift */; };
+		C3DCF9EC2B9E339B007D7FF0 /* InsulinConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9EB2B9E339B007D7FF0 /* InsulinConfigViewModel.swift */; };
+		C3DCF9F22B9E599B007D7FF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9F12B9E599B007D7FF0 /* ProfileViewController.swift */; };
+		C3DCF9F42B9E59A8007D7FF0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9F32B9E59A8007D7FF0 /* ProfileView.swift */; };
+		C3DCF9F62B9E59B4007D7FF0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9F52B9E59B4007D7FF0 /* ProfileViewModel.swift */; };
+		C3DCF9F92B9E5A44007D7FF0 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9F82B9E5A44007D7FF0 /* NotificationViewModel.swift */; };
+		C3DCF9FB2B9E5A5A007D7FF0 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9FA2B9E5A5A007D7FF0 /* NotificationView.swift */; };
+		C3DCF9FD2B9E5A67007D7FF0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9FC2B9E5A67007D7FF0 /* NotificationViewController.swift */; };
+		C3DCFA002B9E5ABA007D7FF0 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCF9FF2B9E5ABA007D7FF0 /* NewNoteViewController.swift */; };
+		C3DCFA022B9E5AC7007D7FF0 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA012B9E5AC7007D7FF0 /* NewNoteView.swift */; };
+		C3DCFA042B9E5AD2007D7FF0 /* NewNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA032B9E5AD2007D7FF0 /* NewNoteViewModel.swift */; };
+		C3DCFA072B9E5B0C007D7FF0 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA062B9E5B0C007D7FF0 /* StatisticView.swift */; };
+		C3DCFA092B9E5B1A007D7FF0 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA082B9E5B1A007D7FF0 /* StatisticViewController.swift */; };
+		C3DCFA0B2B9E5B26007D7FF0 /* StatisticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA0A2B9E5B26007D7FF0 /* StatisticViewModel.swift */; };
+		C3DCFA0E2B9E5C15007D7FF0 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA0D2B9E5C15007D7FF0 /* TemplateViewController.swift */; };
+		C3DCFA102B9E5C21007D7FF0 /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA0F2B9E5C21007D7FF0 /* TemplateView.swift */; };
+		C3DCFA122B9E5C2C007D7FF0 /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DCFA112B9E5C2C007D7FF0 /* TemplateViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C391D64C2DFDD3DE00027440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3DCF9A02B9DF31A007D7FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C391D6402DFDD3DC00027440;
+			remoteInfo = "DiaCareWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C391D6522DFDD3DE00027440 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C391D64E2DFDD3DE00027440 /* TrackSugarWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C31D16712BC753E6004A133F /* ProductConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConfigView.swift; sourceTree = "<group>"; };
+		C31D16732BC753FF004A133F /* ProfuctConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfuctConfigViewController.swift; sourceTree = "<group>"; };
+		C31D16752BC7540E004A133F /* ProductConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConfigViewModel.swift; sourceTree = "<group>"; };
+		C31D16772BC75AFE004A133F /* CustomCircledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircledView.swift; sourceTree = "<group>"; };
+		C31D16792BC77999004A133F /* UserProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProductModel.swift; sourceTree = "<group>"; };
+		C31D167B2BC783C3004A133F /* UserProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProductTableViewCell.swift; sourceTree = "<group>"; };
+		C31D167E2BC7D97A004A133F /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		C31D171D2BD0F76C004A133F /* NewUserProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserProductViewController.swift; sourceTree = "<group>"; };
+		C31D171F2BD0F775004A133F /* NewUserProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserProductView.swift; sourceTree = "<group>"; };
+		C31D17212BD0F77F004A133F /* NewUserProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserProductViewModel.swift; sourceTree = "<group>"; };
+		C31D17232BD1B2D1004A133F /* NewProductInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductInputView.swift; sourceTree = "<group>"; };
+		C333AB9F2B9F09BF00EA100E /* CustomGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGradientView.swift; sourceTree = "<group>"; };
+		C333ABA12B9F820700EA100E /* CustomUnderlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUnderlineView.swift; sourceTree = "<group>"; };
+		C333ABA52B9FBBD900EA100E /* PreferencesSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSubView.swift; sourceTree = "<group>"; };
+		C333ABA72B9FC5AB00EA100E /* UserNameSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameSubView.swift; sourceTree = "<group>"; };
+		C333ABA92B9FC79300EA100E /* PreferencesHStackFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesHStackFabric.swift; sourceTree = "<group>"; };
+		C333ABAC2B9FCA9200EA100E /* UserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataManager.swift; sourceTree = "<group>"; };
+		C333ABAF2BA0F4DD00EA100E /* MainAppTabBarFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppTabBarFabric.swift; sourceTree = "<group>"; };
+		C333ABB12BA2417600EA100E /* DragSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragSubView.swift; sourceTree = "<group>"; };
+		C333ABB32BA2534A00EA100E /* SettingsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSubView.swift; sourceTree = "<group>"; };
+		C333ABB52BA2549400EA100E /* CustomLanguageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLanguageTextField.swift; sourceTree = "<group>"; };
+		C333ABB92BA326D000EA100E /* NewNoteSugarSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteSugarSubView.swift; sourceTree = "<group>"; };
+		C333ABBB2BA37A8A00EA100E /* NewNoteFoodSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteFoodSubView.swift; sourceTree = "<group>"; };
+		C333ABC02BA37D9000EA100E /* CustomAddFoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddFoodButton.swift; sourceTree = "<group>"; };
+		C333ABC32BA636F700EA100E /* NewNoteInjectionSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteInjectionSubView.swift; sourceTree = "<group>"; };
+		C333ABC62BA7476F00EA100E /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		C3607D382BF37BEA004595BD /* TemplateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3607D3A2BF383C5004595BD /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		C3607D3C2BF383F9004595BD /* NewTemplateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3607D3F2BF389FC004595BD /* NewTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateView.swift; sourceTree = "<group>"; };
+		C3607D432BF38A13004595BD /* NewTemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateViewModel.swift; sourceTree = "<group>"; };
+		C3607D452BF38AC2004595BD /* NewTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateViewController.swift; sourceTree = "<group>"; };
+		C3607D482BF3928E004595BD /* NewTemplateFoodSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateFoodSubView.swift; sourceTree = "<group>"; };
+		C3607D4A2BF3A207004595BD /* NewTemplateInjectionSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateInjectionSubView.swift; sourceTree = "<group>"; };
+		C3607D4C2BF3A55F004595BD /* NewTemplateStatsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTemplateStatsSubView.swift; sourceTree = "<group>"; };
+		C3607D4F2BF4098B004595BD /* ProductCategoriesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesEnum.swift; sourceTree = "<group>"; };
+		C3607D512BF409B5004595BD /* TemplateCategoriesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCategoriesEnum.swift; sourceTree = "<group>"; };
+		C3607D532BF80A16004595BD /* SugarStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarStateEnum.swift; sourceTree = "<group>"; };
+		C3607D552BF8DE65004595BD /* MainAppModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppModuleFactory.swift; sourceTree = "<group>"; };
+		C3607D582BF8EBC7004595BD /* WelcomeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleFactory.swift; sourceTree = "<group>"; };
+		C3607D5A2BF8EC7B004595BD /* TabBarModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactory.swift; sourceTree = "<group>"; };
+		C364B5272BB48CFC00AC1CB3 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		C364B5292BB48D0600AC1CB3 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		C364B52B2BB48D1500AC1CB3 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		C364B52F2BB49BC700AC1CB3 /* UIButtonFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonFabric.swift; sourceTree = "<group>"; };
+		C364B5322BB4A82200AC1CB3 /* TranslationNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationNetworkService.swift; sourceTree = "<group>"; };
+		C364B5372BB4B97300AC1CB3 /* TranslationAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAPIModel.swift; sourceTree = "<group>"; };
+		C364B5392BB4C40600AC1CB3 /* ProductAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPIModel.swift; sourceTree = "<group>"; };
+		C364B53B2BB4CD7200AC1CB3 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		C364B53E2BB4D2BA00AC1CB3 /* ProductVStackFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVStackFabric.swift; sourceTree = "<group>"; };
+		C364B5402BB4D65A00AC1CB3 /* ProductNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNetworkService.swift; sourceTree = "<group>"; };
+		C364B5432BB9967300AC1CB3 /* PushNotification+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PushNotification+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5442BB9967300AC1CB3 /* PushNotification+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PushNotification+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5452BB9967300AC1CB3 /* Templates+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Templates+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5462BB9967300AC1CB3 /* Templates+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Templates+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5472BB9967300AC1CB3 /* UserProducts+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProducts+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5482BB9967300AC1CB3 /* UserProducts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProducts+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B5492BB9967300AC1CB3 /* ProductTypes+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductTypes+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B54A2BB9967300AC1CB3 /* ProductTypes+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductTypes+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B54B2BB9967300AC1CB3 /* NotesHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesHistory+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B54C2BB9967300AC1CB3 /* NotesHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesHistory+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B54D2BB9967300AC1CB3 /* TemplateProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemplateProduct+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C364B54E2BB9967300AC1CB3 /* TemplateProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemplateProduct+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C364B55C2BB999E600AC1CB3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C364B55E2BB9F43700AC1CB3 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		C364B5662BBC959A00AC1CB3 /* MainAppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppAssembly.swift; sourceTree = "<group>"; };
+		C364B56C2BBD60C100AC1CB3 /* WelcomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFlowCoordinator.swift; sourceTree = "<group>"; };
+		C364B56F2BBD696C00AC1CB3 /* NewNoteScreenFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteScreenFlowCoordinator.swift; sourceTree = "<group>"; };
+		C364B5712BBD69B000AC1CB3 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		C364B5732BBD778D00AC1CB3 /* TemplateScreenFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateScreenFlowCoordinator.swift; sourceTree = "<group>"; };
+		C3666A672BE57C7500BA9551 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		C3666A6A2BE58D7C00BA9551 /* NotificationConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConfigViewController.swift; sourceTree = "<group>"; };
+		C3666A6C2BE58D8B00BA9551 /* NotificationConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConfigView.swift; sourceTree = "<group>"; };
+		C3666A6E2BE58D9700BA9551 /* NotificationConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConfigViewModel.swift; sourceTree = "<group>"; };
+		C3666A712BE5A5B000BA9551 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		C3666A772BE7F21C00BA9551 /* CustomSugarStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSugarStatisticView.swift; sourceTree = "<group>"; };
+		C3666A792BE8095000BA9551 /* CustomFoodStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodStatisticView.swift; sourceTree = "<group>"; };
+		C3666A7B2BE954C700BA9551 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		C3666A7E2BEAA5E100BA9551 /* ChartSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSubView.swift; sourceTree = "<group>"; };
+		C3666A802BEAB5A900BA9551 /* SugarStatsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarStatsSubView.swift; sourceTree = "<group>"; };
+		C3666A822BEAB82A00BA9551 /* FoodStatsSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStatsSubView.swift; sourceTree = "<group>"; };
+		C3666A842BEAE04C00BA9551 /* DGChartsCustomFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGChartsCustomFormater.swift; sourceTree = "<group>"; };
+		C391D6372DFDC9E500027440 /* SugarAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarAnalysisView.swift; sourceTree = "<group>"; };
+		C391D63B2DFDCA0900027440 /* SugarAnalysisEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarAnalysisEnum.swift; sourceTree = "<group>"; };
+		C391D6412DFDD3DC00027440 /* TrackSugarWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrackSugarWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C391D6542DFDD44A00027440 /* TrackSugar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrackSugar.entitlements; sourceTree = "<group>"; };
+		C391D6602DFDE33100027440 /* SugarAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarAnalysisManager.swift; sourceTree = "<group>"; };
+		C391D6622DFDE6F200027440 /* NewNotePhysicalActivitySubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotePhysicalActivitySubView.swift; sourceTree = "<group>"; };
+		C391D6702DFE0E8D00027440 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C391D6722DFE0E8D00027440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C391D6732DFE0E8D00027440 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C391D6742DFE0E8D00027440 /* TrackSugarWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TrackSugarWatch Watch App.entitlements"; sourceTree = "<group>"; };
+		C391D6752DFE0E8D00027440 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
+		C3DCF9A82B9DF31A007D7FF0 /* TrackSugar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackSugar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DCF9AB2B9DF31A007D7FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3DCF9AD2B9DF31A007D7FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C3DCF9B52B9DF31A007D7FF0 /* TrackSugar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackSugar.xcdatamodel; sourceTree = "<group>"; };
+		C3DCF9B72B9DF31B007D7FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3DCF9BA2B9DF31B007D7FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3DCF9BC2B9DF31B007D7FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DCF9CF2B9DF588007D7FF0 /* NameRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegisterViewController.swift; sourceTree = "<group>"; };
+		C3DCF9D12B9DF5A4007D7FF0 /* NameRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegisterView.swift; sourceTree = "<group>"; };
+		C3DCF9D32B9DF5BA007D7FF0 /* NameRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegisterViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9D62B9E039E007D7FF0 /* SugarConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarConfigView.swift; sourceTree = "<group>"; };
+		C3DCF9D82B9E03AB007D7FF0 /* SugarConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarConfigViewController.swift; sourceTree = "<group>"; };
+		C3DCF9DA2B9E03CD007D7FF0 /* SugarConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarConfigViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9DC2B9E0B0D007D7FF0 /* CustomConfigTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConfigTextField.swift; sourceTree = "<group>"; };
+		C3DCF9E02B9E19A2007D7FF0 /* FoodConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodConfigViewController.swift; sourceTree = "<group>"; };
+		C3DCF9E22B9E19AD007D7FF0 /* FoodConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodConfigViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9E42B9E19BE007D7FF0 /* FoodConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodConfigView.swift; sourceTree = "<group>"; };
+		C3DCF9E72B9E337F007D7FF0 /* InsulinConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinConfigView.swift; sourceTree = "<group>"; };
+		C3DCF9E92B9E338D007D7FF0 /* InsulinConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinConfigViewController.swift; sourceTree = "<group>"; };
+		C3DCF9EB2B9E339B007D7FF0 /* InsulinConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinConfigViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9F12B9E599B007D7FF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3DCF9F32B9E59A8007D7FF0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C3DCF9F52B9E59B4007D7FF0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9F82B9E5A44007D7FF0 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		C3DCF9FA2B9E5A5A007D7FF0 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C3DCF9FC2B9E5A67007D7FF0 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		C3DCF9FF2B9E5ABA007D7FF0 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		C3DCFA012B9E5AC7007D7FF0 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		C3DCFA032B9E5AD2007D7FF0 /* NewNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewModel.swift; sourceTree = "<group>"; };
+		C3DCFA062B9E5B0C007D7FF0 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		C3DCFA082B9E5B1A007D7FF0 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		C3DCFA0A2B9E5B26007D7FF0 /* StatisticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewModel.swift; sourceTree = "<group>"; };
+		C3DCFA0D2B9E5C15007D7FF0 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		C3DCFA0F2B9E5C21007D7FF0 /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		C3DCFA112B9E5C2C007D7FF0 /* TemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C391D63E2DFDD3DC00027440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DCF9A52B9DF31A007D7FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DCF9CA2B9DF4DB007D7FF0 /* Alamofire in Frameworks */,
+				C364B5642BBC94BA00AC1CB3 /* Swinject in Frameworks */,
+				C3666A752BE7D0DB00BA9551 /* DGCharts in Frameworks */,
+				C391D6362DFDC34800027440 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C31D16702BC753D3004A133F /* ProductConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C31D16712BC753E6004A133F /* ProductConfigView.swift */,
+				C31D16732BC753FF004A133F /* ProfuctConfigViewController.swift */,
+				C31D16752BC7540E004A133F /* ProductConfigViewModel.swift */,
+			);
+			path = ProductConfigScreen;
+			sourceTree = "<group>";
+		};
+		C31D167D2BC7B06A004A133F /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABAF2BA0F4DD00EA100E /* MainAppTabBarFabric.swift */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		C31D171C2BD0F723004A133F /* NewUserProductScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C31D171D2BD0F76C004A133F /* NewUserProductViewController.swift */,
+				C31D171F2BD0F775004A133F /* NewUserProductView.swift */,
+				C31D17212BD0F77F004A133F /* NewUserProductViewModel.swift */,
+			);
+			path = NewUserProductScreen;
+			sourceTree = "<group>";
+		};
+		C333AB9E2B9F09A600EA100E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABBF2BA37D7600EA100E /* Buttons */,
+				C333ABBE2BA37D6A00EA100E /* TextFields */,
+				C333ABBD2BA37D5E00EA100E /* Views */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		C333ABAE2BA0F4BA00EA100E /* UIFabrics */ = {
+			isa = PBXGroup;
+			children = (
+				C31D167D2BC7B06A004A133F /* UITabBar */,
+				C364B52E2BB49BBA00AC1CB3 /* UIButton */,
+				C364B53D2BB4D27200AC1CB3 /* UIStackViewFabric */,
+			);
+			path = UIFabrics;
+			sourceTree = "<group>";
+		};
+		C333ABB72BA326A100EA100E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABA72B9FC5AB00EA100E /* UserNameSubView.swift */,
+				C333ABA52B9FBBD900EA100E /* PreferencesSubView.swift */,
+				C333ABB12BA2417600EA100E /* DragSubView.swift */,
+				C333ABB32BA2534A00EA100E /* SettingsSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C333ABB82BA326B200EA100E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6622DFDE6F200027440 /* NewNotePhysicalActivitySubView.swift */,
+				C333ABB92BA326D000EA100E /* NewNoteSugarSubView.swift */,
+				C333ABBB2BA37A8A00EA100E /* NewNoteFoodSubView.swift */,
+				C333ABC32BA636F700EA100E /* NewNoteInjectionSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C333ABBD2BA37D5E00EA100E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3666A792BE8095000BA9551 /* CustomFoodStatisticView.swift */,
+				C3666A772BE7F21C00BA9551 /* CustomSugarStatisticView.swift */,
+				C333AB9F2B9F09BF00EA100E /* CustomGradientView.swift */,
+				C333ABA12B9F820700EA100E /* CustomUnderlineView.swift */,
+				C31D16772BC75AFE004A133F /* CustomCircledView.swift */,
+				C31D17232BD1B2D1004A133F /* NewProductInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C333ABBE2BA37D6A00EA100E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABB52BA2549400EA100E /* CustomLanguageTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		C333ABBF2BA37D7600EA100E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABC02BA37D9000EA100E /* CustomAddFoodButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C333ABC22BA37E5900EA100E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9DC2B9E0B0D007D7FF0 /* CustomConfigTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		C333ABC52BA7474F00EA100E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABC62BA7476F00EA100E /* UIImageExtensions.swift */,
+				C364B55E2BB9F43700AC1CB3 /* UITableViewExtensions.swift */,
+				C31D167E2BC7D97A004A133F /* UIButtonExtensions.swift */,
+				C3666A842BEAE04C00BA9551 /* DGChartsCustomFormater.swift */,
+				C3607D3A2BF383C5004595BD /* UICollectionViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3607D3E2BF389E6004595BD /* NewTemplateScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3607D472BF39277004595BD /* SubViews */,
+				C3607D3F2BF389FC004595BD /* NewTemplateView.swift */,
+				C3607D432BF38A13004595BD /* NewTemplateViewModel.swift */,
+				C3607D452BF38AC2004595BD /* NewTemplateViewController.swift */,
+			);
+			path = NewTemplateScreen;
+			sourceTree = "<group>";
+		};
+		C3607D472BF39277004595BD /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C3607D482BF3928E004595BD /* NewTemplateFoodSubView.swift */,
+				C3607D4A2BF3A207004595BD /* NewTemplateInjectionSubView.swift */,
+				C3607D4C2BF3A55F004595BD /* NewTemplateStatsSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C3607D4E2BF40966004595BD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C391D63B2DFDCA0900027440 /* SugarAnalysisEnum.swift */,
+				C3607D4F2BF4098B004595BD /* ProductCategoriesEnum.swift */,
+				C3607D512BF409B5004595BD /* TemplateCategoriesEnum.swift */,
+				C3607D532BF80A16004595BD /* SugarStateEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C3607D572BF8EBAD004595BD /* ModuleFactories */ = {
+			isa = PBXGroup;
+			children = (
+				C3607D552BF8DE65004595BD /* MainAppModuleFactory.swift */,
+				C3607D582BF8EBC7004595BD /* WelcomeModuleFactory.swift */,
+				C3607D5A2BF8EC7B004595BD /* TabBarModuleFactory.swift */,
+			);
+			path = ModuleFactories;
+			sourceTree = "<group>";
+		};
+		C364B5262BB48CE200AC1CB3 /* ProductScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C364B5272BB48CFC00AC1CB3 /* ProductView.swift */,
+				C364B5292BB48D0600AC1CB3 /* ProductViewController.swift */,
+				C364B52B2BB48D1500AC1CB3 /* ProductViewModel.swift */,
+				C364B53B2BB4CD7200AC1CB3 /* ProductTableViewCell.swift */,
+				C31D16792BC77999004A133F /* UserProductModel.swift */,
+			);
+			path = ProductScreen;
+			sourceTree = "<group>";
+		};
+		C364B52E2BB49BBA00AC1CB3 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				C364B52F2BB49BC700AC1CB3 /* UIButtonFabric.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C364B5312BB4A81000AC1CB3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C364B5322BB4A82200AC1CB3 /* TranslationNetworkService.swift */,
+				C364B5372BB4B97300AC1CB3 /* TranslationAPIModel.swift */,
+				C364B5392BB4C40600AC1CB3 /* ProductAPIModel.swift */,
+				C364B5402BB4D65A00AC1CB3 /* ProductNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C364B53D2BB4D27200AC1CB3 /* UIStackViewFabric */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABA92B9FC79300EA100E /* PreferencesHStackFabric.swift */,
+				C364B53E2BB4D2BA00AC1CB3 /* ProductVStackFabric.swift */,
+			);
+			path = UIStackViewFabric;
+			sourceTree = "<group>";
+		};
+		C364B5422BB995A200AC1CB3 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C364B5432BB9967300AC1CB3 /* PushNotification+CoreDataClass.swift */,
+				C364B5442BB9967300AC1CB3 /* PushNotification+CoreDataProperties.swift */,
+				C364B5452BB9967300AC1CB3 /* Templates+CoreDataClass.swift */,
+				C364B5462BB9967300AC1CB3 /* Templates+CoreDataProperties.swift */,
+				C364B5472BB9967300AC1CB3 /* UserProducts+CoreDataClass.swift */,
+				C364B5482BB9967300AC1CB3 /* UserProducts+CoreDataProperties.swift */,
+				C364B5492BB9967300AC1CB3 /* ProductTypes+CoreDataClass.swift */,
+				C364B54A2BB9967300AC1CB3 /* ProductTypes+CoreDataProperties.swift */,
+				C364B54B2BB9967300AC1CB3 /* NotesHistory+CoreDataClass.swift */,
+				C364B54C2BB9967300AC1CB3 /* NotesHistory+CoreDataProperties.swift */,
+				C364B54D2BB9967300AC1CB3 /* TemplateProduct+CoreDataClass.swift */,
+				C364B54E2BB9967300AC1CB3 /* TemplateProduct+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		C364B55B2BB999D600AC1CB3 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABAC2B9FCA9200EA100E /* UserDefaultsDataManager.swift */,
+				C364B55C2BB999E600AC1CB3 /* CoreDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		C364B5652BBC958300AC1CB3 /* Asseblies */ = {
+			isa = PBXGroup;
+			children = (
+				C364B5662BBC959A00AC1CB3 /* MainAppAssembly.swift */,
+			);
+			path = Asseblies;
+			sourceTree = "<group>";
+		};
+		C364B56E2BBD693700AC1CB3 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C3607D572BF8EBAD004595BD /* ModuleFactories */,
+				C364B56C2BBD60C100AC1CB3 /* WelcomeFlowCoordinator.swift */,
+				C364B56F2BBD696C00AC1CB3 /* NewNoteScreenFlowCoordinator.swift */,
+				C364B5732BBD778D00AC1CB3 /* TemplateScreenFlowCoordinator.swift */,
+				C364B5712BBD69B000AC1CB3 /* CoordinatorProtocol.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		C3666A692BE58D5A00BA9551 /* NotificationConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3666A6A2BE58D7C00BA9551 /* NotificationConfigViewController.swift */,
+				C3666A6C2BE58D8B00BA9551 /* NotificationConfigView.swift */,
+				C3666A6E2BE58D9700BA9551 /* NotificationConfigViewModel.swift */,
+			);
+			path = NotificationConfigScreen;
+			sourceTree = "<group>";
+		};
+		C3666A702BE5A59600BA9551 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6602DFDE33100027440 /* SugarAnalysisManager.swift */,
+				C364B55B2BB999D600AC1CB3 /* DataManagers */,
+				C3666A712BE5A5B000BA9551 /* PushNotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C3666A7D2BEAA5B800BA9551 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6372DFDC9E500027440 /* SugarAnalysisView.swift */,
+				C3666A7E2BEAA5E100BA9551 /* ChartSubView.swift */,
+				C3666A802BEAB5A900BA9551 /* SugarStatsSubView.swift */,
+				C3666A822BEAB82A00BA9551 /* FoodStatsSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C391D6712DFE0E8D00027440 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6702DFE0E8D00027440 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C391D6762DFE0E8D00027440 /* TrackSugarWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6712DFE0E8D00027440 /* Preview Content */,
+				C391D6722DFE0E8D00027440 /* Assets.xcassets */,
+				C391D6732DFE0E8D00027440 /* ContentView.swift */,
+				C391D6742DFE0E8D00027440 /* TrackSugarWatch Watch App.entitlements */,
+				C391D6752DFE0E8D00027440 /* WatchApp.swift */,
+			);
+			path = "TrackSugarWatch Watch App";
+			sourceTree = "<group>";
+		};
+		C3DCF99F2B9DF31A007D7FF0 = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9AA2B9DF31A007D7FF0 /* TrackSugar */,
+				C391D6762DFE0E8D00027440 /* TrackSugarWatch Watch App */,
+				C3DCF9A92B9DF31A007D7FF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3DCF9A92B9DF31A007D7FF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9A82B9DF31A007D7FF0 /* TrackSugar.app */,
+				C391D6412DFDD3DC00027440 /* TrackSugarWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3DCF9AA2B9DF31A007D7FF0 /* TrackSugar */ = {
+			isa = PBXGroup;
+			children = (
+				C391D6542DFDD44A00027440 /* TrackSugar.entitlements */,
+				C3607D4E2BF40966004595BD /* Enums */,
+				C333ABAE2BA0F4BA00EA100E /* UIFabrics */,
+				C364B56E2BBD693700AC1CB3 /* FlowCoordinators */,
+				C364B5652BBC958300AC1CB3 /* Asseblies */,
+				C3666A702BE5A59600BA9551 /* Managers */,
+				C364B5422BB995A200AC1CB3 /* CoreDataModels */,
+				C364B5312BB4A81000AC1CB3 /* Network */,
+				C333ABC52BA7474F00EA100E /* Extensions */,
+				C3DCF9EF2B9E597B007D7FF0 /* Main Screens */,
+				C3DCF9CD2B9DF517007D7FF0 /* Welcome Screens */,
+				C3DCF9AB2B9DF31A007D7FF0 /* AppDelegate.swift */,
+				C3DCF9AD2B9DF31A007D7FF0 /* SceneDelegate.swift */,
+				C3DCF9B72B9DF31B007D7FF0 /* Assets.xcassets */,
+				C3DCF9B92B9DF31B007D7FF0 /* LaunchScreen.storyboard */,
+				C3DCF9BC2B9DF31B007D7FF0 /* Info.plist */,
+				C3DCF9B42B9DF31A007D7FF0 /* TrackSugar.xcdatamodeld */,
+			);
+			path = TrackSugar;
+			sourceTree = "<group>";
+		};
+		C3DCF9CD2B9DF517007D7FF0 /* Welcome Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9DE2B9E1782007D7FF0 /* CustomUI */,
+				C3DCF9E62B9E335F007D7FF0 /* InsulinConfigScreen */,
+				C3DCF9DF2B9E198A007D7FF0 /* FoodConfigScreen */,
+				C3DCF9D52B9E0373007D7FF0 /* SugarConfigScreen */,
+				C3DCF9CE2B9DF53A007D7FF0 /* NameRegisterScreen */,
+			);
+			path = "Welcome Screens";
+			sourceTree = "<group>";
+		};
+		C3DCF9CE2B9DF53A007D7FF0 /* NameRegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9CF2B9DF588007D7FF0 /* NameRegisterViewController.swift */,
+				C3DCF9D12B9DF5A4007D7FF0 /* NameRegisterView.swift */,
+				C3DCF9D32B9DF5BA007D7FF0 /* NameRegisterViewModel.swift */,
+			);
+			path = NameRegisterScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9D52B9E0373007D7FF0 /* SugarConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9D62B9E039E007D7FF0 /* SugarConfigView.swift */,
+				C3DCF9D82B9E03AB007D7FF0 /* SugarConfigViewController.swift */,
+				C3DCF9DA2B9E03CD007D7FF0 /* SugarConfigViewModel.swift */,
+			);
+			path = SugarConfigScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9DE2B9E1782007D7FF0 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABC22BA37E5900EA100E /* TextFields */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		C3DCF9DF2B9E198A007D7FF0 /* FoodConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9E02B9E19A2007D7FF0 /* FoodConfigViewController.swift */,
+				C3DCF9E22B9E19AD007D7FF0 /* FoodConfigViewModel.swift */,
+				C3DCF9E42B9E19BE007D7FF0 /* FoodConfigView.swift */,
+			);
+			path = FoodConfigScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9E62B9E335F007D7FF0 /* InsulinConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9E72B9E337F007D7FF0 /* InsulinConfigView.swift */,
+				C3DCF9E92B9E338D007D7FF0 /* InsulinConfigViewController.swift */,
+				C3DCF9EB2B9E339B007D7FF0 /* InsulinConfigViewModel.swift */,
+			);
+			path = InsulinConfigScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9EF2B9E597B007D7FF0 /* Main Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C31D171C2BD0F723004A133F /* NewUserProductScreen */,
+				C31D16702BC753D3004A133F /* ProductConfigScreen */,
+				C364B5262BB48CE200AC1CB3 /* ProductScreen */,
+				C333AB9E2B9F09A600EA100E /* CustomUI */,
+				C3DCFA0C2B9E5BEE007D7FF0 /* TemplateScreen */,
+				C3607D3E2BF389E6004595BD /* NewTemplateScreen */,
+				C3DCFA052B9E5AE9007D7FF0 /* StatisticScreen */,
+				C3DCF9FE2B9E5A73007D7FF0 /* NewNoteScreen */,
+				C3DCF9F72B9E5A33007D7FF0 /* NotificationScreen */,
+				C3666A692BE58D5A00BA9551 /* NotificationConfigScreen */,
+				C3DCF9F02B9E598C007D7FF0 /* ProfileScreen */,
+			);
+			path = "Main Screens";
+			sourceTree = "<group>";
+		};
+		C3DCF9F02B9E598C007D7FF0 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABB72BA326A100EA100E /* SubViews */,
+				C3DCF9F12B9E599B007D7FF0 /* ProfileViewController.swift */,
+				C3DCF9F32B9E59A8007D7FF0 /* ProfileView.swift */,
+				C3DCF9F52B9E59B4007D7FF0 /* ProfileViewModel.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9F72B9E5A33007D7FF0 /* NotificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCF9F82B9E5A44007D7FF0 /* NotificationViewModel.swift */,
+				C3DCF9FA2B9E5A5A007D7FF0 /* NotificationView.swift */,
+				C3DCF9FC2B9E5A67007D7FF0 /* NotificationViewController.swift */,
+				C3666A672BE57C7500BA9551 /* NotificationTableViewCell.swift */,
+			);
+			path = NotificationScreen;
+			sourceTree = "<group>";
+		};
+		C3DCF9FE2B9E5A73007D7FF0 /* NewNoteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABB82BA326B200EA100E /* SubViews */,
+				C3DCF9FF2B9E5ABA007D7FF0 /* NewNoteViewController.swift */,
+				C3DCFA012B9E5AC7007D7FF0 /* NewNoteView.swift */,
+				C3DCFA032B9E5AD2007D7FF0 /* NewNoteViewModel.swift */,
+				C31D167B2BC783C3004A133F /* UserProductTableViewCell.swift */,
+			);
+			path = NewNoteScreen;
+			sourceTree = "<group>";
+		};
+		C3DCFA052B9E5AE9007D7FF0 /* StatisticScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3666A7D2BEAA5B800BA9551 /* SubViews */,
+				C3DCFA062B9E5B0C007D7FF0 /* StatisticView.swift */,
+				C3DCFA082B9E5B1A007D7FF0 /* StatisticViewController.swift */,
+				C3DCFA0A2B9E5B26007D7FF0 /* StatisticViewModel.swift */,
+				C3666A7B2BE954C700BA9551 /* HistoryTableViewCell.swift */,
+			);
+			path = StatisticScreen;
+			sourceTree = "<group>";
+		};
+		C3DCFA0C2B9E5BEE007D7FF0 /* TemplateScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCFA0D2B9E5C15007D7FF0 /* TemplateViewController.swift */,
+				C3DCFA0F2B9E5C21007D7FF0 /* TemplateView.swift */,
+				C3DCFA112B9E5C2C007D7FF0 /* TemplateViewModel.swift */,
+				C3607D382BF37BEA004595BD /* TemplateCollectionViewCell.swift */,
+				C3607D3C2BF383F9004595BD /* NewTemplateCollectionViewCell.swift */,
+			);
+			path = TemplateScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C391D6402DFDD3DC00027440 /* TrackSugarWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C391D64F2DFDD3DE00027440 /* Build configuration list for PBXNativeTarget "TrackSugarWatch Watch App" */;
+			buildPhases = (
+				C391D63D2DFDD3DC00027440 /* Sources */,
+				C391D63E2DFDD3DC00027440 /* Frameworks */,
+				C391D63F2DFDD3DC00027440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrackSugarWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "DiaCareWatch Watch App";
+			productReference = C391D6412DFDD3DC00027440 /* TrackSugarWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3DCF9A72B9DF31A007D7FF0 /* TrackSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DCF9BF2B9DF31B007D7FF0 /* Build configuration list for PBXNativeTarget "TrackSugar" */;
+			buildPhases = (
+				C3DCF9A42B9DF31A007D7FF0 /* Sources */,
+				C3DCF9A52B9DF31A007D7FF0 /* Frameworks */,
+				C3DCF9A62B9DF31A007D7FF0 /* Resources */,
+				C391D6522DFDD3DE00027440 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C391D64D2DFDD3DE00027440 /* PBXTargetDependency */,
+			);
+			name = TrackSugar;
+			packageProductDependencies = (
+				C3DCF9C92B9DF4DB007D7FF0 /* Alamofire */,
+				C364B5632BBC94BA00AC1CB3 /* Swinject */,
+				C3666A742BE7D0DB00BA9551 /* DGCharts */,
+				C391D6352DFDC34800027440 /* SnapKit */,
+			);
+			productName = DiaCare;
+			productReference = C3DCF9A82B9DF31A007D7FF0 /* TrackSugar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3DCF9A02B9DF31A007D7FF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C391D6402DFDD3DC00027440 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C3DCF9A72B9DF31A007D7FF0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = C3DCF9A32B9DF31A007D7FF0 /* Build configuration list for PBXProject "TrackSugar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3DCF99F2B9DF31A007D7FF0;
+			packageReferences = (
+				C3DCF9C82B9DF4DB007D7FF0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C364B5622BBC94BA00AC1CB3 /* XCRemoteSwiftPackageReference "Swinject" */,
+				C3666A732BE7D0DB00BA9551 /* XCRemoteSwiftPackageReference "Charts" */,
+				C391D6342DFDC34800027440 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = C3DCF9A92B9DF31A007D7FF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3DCF9A72B9DF31A007D7FF0 /* TrackSugar */,
+				C391D6402DFDD3DC00027440 /* TrackSugarWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C391D63F2DFDD3DC00027440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C391D6772DFE0E8D00027440 /* Preview Assets.xcassets in Resources */,
+				C391D6782DFE0E8D00027440 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DCF9A62B9DF31A007D7FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DCF9BB2B9DF31B007D7FF0 /* LaunchScreen.storyboard in Resources */,
+				C3DCF9B82B9DF31B007D7FF0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C391D63D2DFDD3DC00027440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C391D6792DFE0E8D00027440 /* ContentView.swift in Sources */,
+				C391D67A2DFE0E8D00027440 /* WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DCF9A42B9DF31A007D7FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C333ABA22B9F820700EA100E /* CustomUnderlineView.swift in Sources */,
+				C3666A832BEAB82A00BA9551 /* FoodStatsSubView.swift in Sources */,
+				C3607D3D2BF383F9004595BD /* NewTemplateCollectionViewCell.swift in Sources */,
+				C3DCF9DB2B9E03CD007D7FF0 /* SugarConfigViewModel.swift in Sources */,
+				C31D171E2BD0F76C004A133F /* NewUserProductViewController.swift in Sources */,
+				C364B5412BB4D65A00AC1CB3 /* ProductNetworkService.swift in Sources */,
+				C391D6612DFDE33100027440 /* SugarAnalysisManager.swift in Sources */,
+				C3DCF9D02B9DF588007D7FF0 /* NameRegisterViewController.swift in Sources */,
+				C31D16722BC753E6004A133F /* ProductConfigView.swift in Sources */,
+				C333ABB62BA2549400EA100E /* CustomLanguageTextField.swift in Sources */,
+				C391D63C2DFDCA0900027440 /* SugarAnalysisEnum.swift in Sources */,
+				C364B5282BB48CFC00AC1CB3 /* ProductView.swift in Sources */,
+				C364B5572BB9967300AC1CB3 /* NotesHistory+CoreDataClass.swift in Sources */,
+				C333ABAD2B9FCA9200EA100E /* UserDefaultsDataManager.swift in Sources */,
+				C364B5382BB4B97300AC1CB3 /* TranslationAPIModel.swift in Sources */,
+				C364B5502BB9967300AC1CB3 /* PushNotification+CoreDataProperties.swift in Sources */,
+				C3607D5B2BF8EC7B004595BD /* TabBarModuleFactory.swift in Sources */,
+				C3607D502BF4098B004595BD /* ProductCategoriesEnum.swift in Sources */,
+				C3607D442BF38A13004595BD /* NewTemplateViewModel.swift in Sources */,
+				C31D17222BD0F77F004A133F /* NewUserProductViewModel.swift in Sources */,
+				C364B52A2BB48D0600AC1CB3 /* ProductViewController.swift in Sources */,
+				C364B52C2BB48D1500AC1CB3 /* ProductViewModel.swift in Sources */,
+				C3DCF9DD2B9E0B0D007D7FF0 /* CustomConfigTextField.swift in Sources */,
+				C31D16782BC75AFE004A133F /* CustomCircledView.swift in Sources */,
+				C3607D492BF3928E004595BD /* NewTemplateFoodSubView.swift in Sources */,
+				C3DCFA022B9E5AC7007D7FF0 /* NewNoteView.swift in Sources */,
+				C364B5582BB9967300AC1CB3 /* NotesHistory+CoreDataProperties.swift in Sources */,
+				C3607D3B2BF383C5004595BD /* UICollectionViewExtensions.swift in Sources */,
+				C333ABC72BA7476F00EA100E /* UIImageExtensions.swift in Sources */,
+				C3DCFA0B2B9E5B26007D7FF0 /* StatisticViewModel.swift in Sources */,
+				C3666A6D2BE58D8B00BA9551 /* NotificationConfigView.swift in Sources */,
+				C3607D562BF8DE65004595BD /* MainAppModuleFactory.swift in Sources */,
+				C333ABA62B9FBBD900EA100E /* PreferencesSubView.swift in Sources */,
+				C31D167A2BC77999004A133F /* UserProductModel.swift in Sources */,
+				C3607D592BF8EBC7004595BD /* WelcomeModuleFactory.swift in Sources */,
+				C3DCF9FB2B9E5A5A007D7FF0 /* NotificationView.swift in Sources */,
+				C3DCF9D22B9DF5A4007D7FF0 /* NameRegisterView.swift in Sources */,
+				C3DCFA002B9E5ABA007D7FF0 /* NewNoteViewController.swift in Sources */,
+				C364B5522BB9967300AC1CB3 /* Templates+CoreDataProperties.swift in Sources */,
+				C3666A722BE5A5B000BA9551 /* PushNotificationManager.swift in Sources */,
+				C3607D4B2BF3A207004595BD /* NewTemplateInjectionSubView.swift in Sources */,
+				C31D16762BC7540E004A133F /* ProductConfigViewModel.swift in Sources */,
+				C3DCF9EA2B9E338D007D7FF0 /* InsulinConfigViewController.swift in Sources */,
+				C3DCF9FD2B9E5A67007D7FF0 /* NotificationViewController.swift in Sources */,
+				C3DCF9D72B9E039E007D7FF0 /* SugarConfigView.swift in Sources */,
+				C333ABB22BA2417600EA100E /* DragSubView.swift in Sources */,
+				C364B5592BB9967300AC1CB3 /* TemplateProduct+CoreDataClass.swift in Sources */,
+				C333ABBC2BA37A8A00EA100E /* NewNoteFoodSubView.swift in Sources */,
+				C3DCF9F22B9E599B007D7FF0 /* ProfileViewController.swift in Sources */,
+				C3607D522BF409B5004595BD /* TemplateCategoriesEnum.swift in Sources */,
+				C364B5332BB4A82200AC1CB3 /* TranslationNetworkService.swift in Sources */,
+				C3DCF9D42B9DF5BA007D7FF0 /* NameRegisterViewModel.swift in Sources */,
+				C31D167F2BC7D97A004A133F /* UIButtonExtensions.swift in Sources */,
+				C3666A812BEAB5A900BA9551 /* SugarStatsSubView.swift in Sources */,
+				C3DCFA102B9E5C21007D7FF0 /* TemplateView.swift in Sources */,
+				C333ABC12BA37D9000EA100E /* CustomAddFoodButton.swift in Sources */,
+				C3607D542BF80A16004595BD /* SugarStateEnum.swift in Sources */,
+				C3DCF9D92B9E03AB007D7FF0 /* SugarConfigViewController.swift in Sources */,
+				C3DCF9E82B9E337F007D7FF0 /* InsulinConfigView.swift in Sources */,
+				C364B55F2BB9F43700AC1CB3 /* UITableViewExtensions.swift in Sources */,
+				C364B5702BBD696C00AC1CB3 /* NewNoteScreenFlowCoordinator.swift in Sources */,
+				C364B5672BBC959A00AC1CB3 /* MainAppAssembly.swift in Sources */,
+				C3666A6B2BE58D7C00BA9551 /* NotificationConfigViewController.swift in Sources */,
+				C333ABC42BA636F700EA100E /* NewNoteInjectionSubView.swift in Sources */,
+				C3DCFA092B9E5B1A007D7FF0 /* StatisticViewController.swift in Sources */,
+				C3DCF9E12B9E19A2007D7FF0 /* FoodConfigViewController.swift in Sources */,
+				C391D6632DFDE6F200027440 /* NewNotePhysicalActivitySubView.swift in Sources */,
+				C3607D402BF389FC004595BD /* NewTemplateView.swift in Sources */,
+				C333ABB42BA2534A00EA100E /* SettingsSubView.swift in Sources */,
+				C364B55A2BB9967300AC1CB3 /* TemplateProduct+CoreDataProperties.swift in Sources */,
+				C3DCFA072B9E5B0C007D7FF0 /* StatisticView.swift in Sources */,
+				C3666A852BEAE04C00BA9551 /* DGChartsCustomFormater.swift in Sources */,
+				C3666A682BE57C7500BA9551 /* NotificationTableViewCell.swift in Sources */,
+				C31D167C2BC783C3004A133F /* UserProductTableViewCell.swift in Sources */,
+				C364B5302BB49BC700AC1CB3 /* UIButtonFabric.swift in Sources */,
+				C333ABA02B9F09BF00EA100E /* CustomGradientView.swift in Sources */,
+				C3607D4D2BF3A55F004595BD /* NewTemplateStatsSubView.swift in Sources */,
+				C3DCF9B62B9DF31A007D7FF0 /* TrackSugar.xcdatamodeld in Sources */,
+				C364B5722BBD69B000AC1CB3 /* CoordinatorProtocol.swift in Sources */,
+				C3DCF9EC2B9E339B007D7FF0 /* InsulinConfigViewModel.swift in Sources */,
+				C364B5552BB9967300AC1CB3 /* ProductTypes+CoreDataClass.swift in Sources */,
+				C333ABA82B9FC5AB00EA100E /* UserNameSubView.swift in Sources */,
+				C3DCF9F62B9E59B4007D7FF0 /* ProfileViewModel.swift in Sources */,
+				C3607D392BF37BEA004595BD /* TemplateCollectionViewCell.swift in Sources */,
+				C3666A7A2BE8095000BA9551 /* CustomFoodStatisticView.swift in Sources */,
+				C3DCF9E52B9E19BE007D7FF0 /* FoodConfigView.swift in Sources */,
+				C3666A7F2BEAA5E100BA9551 /* ChartSubView.swift in Sources */,
+				C364B5542BB9967300AC1CB3 /* UserProducts+CoreDataProperties.swift in Sources */,
+				C391D6382DFDC9E500027440 /* SugarAnalysisView.swift in Sources */,
+				C333ABBA2BA326D000EA100E /* NewNoteSugarSubView.swift in Sources */,
+				C3DCF9AC2B9DF31A007D7FF0 /* AppDelegate.swift in Sources */,
+				C3DCF9F92B9E5A44007D7FF0 /* NotificationViewModel.swift in Sources */,
+				C3607D462BF38AC2004595BD /* NewTemplateViewController.swift in Sources */,
+				C364B5562BB9967300AC1CB3 /* ProductTypes+CoreDataProperties.swift in Sources */,
+				C364B55D2BB999E600AC1CB3 /* CoreDataManager.swift in Sources */,
+				C364B53F2BB4D2BA00AC1CB3 /* ProductVStackFabric.swift in Sources */,
+				C364B53A2BB4C40600AC1CB3 /* ProductAPIModel.swift in Sources */,
+				C3666A7C2BE954C700BA9551 /* HistoryTableViewCell.swift in Sources */,
+				C3DCFA122B9E5C2C007D7FF0 /* TemplateViewModel.swift in Sources */,
+				C3DCF9F42B9E59A8007D7FF0 /* ProfileView.swift in Sources */,
+				C31D16742BC753FF004A133F /* ProfuctConfigViewController.swift in Sources */,
+				C364B5512BB9967300AC1CB3 /* Templates+CoreDataClass.swift in Sources */,
+				C31D17242BD1B2D1004A133F /* NewProductInputView.swift in Sources */,
+				C364B53C2BB4CD7200AC1CB3 /* ProductTableViewCell.swift in Sources */,
+				C364B5742BBD778D00AC1CB3 /* TemplateScreenFlowCoordinator.swift in Sources */,
+				C3666A782BE7F21C00BA9551 /* CustomSugarStatisticView.swift in Sources */,
+				C31D17202BD0F775004A133F /* NewUserProductView.swift in Sources */,
+				C333ABAA2B9FC79300EA100E /* PreferencesHStackFabric.swift in Sources */,
+				C364B56D2BBD60C100AC1CB3 /* WelcomeFlowCoordinator.swift in Sources */,
+				C364B54F2BB9967300AC1CB3 /* PushNotification+CoreDataClass.swift in Sources */,
+				C3DCFA0E2B9E5C15007D7FF0 /* TemplateViewController.swift in Sources */,
+				C3DCF9E32B9E19AD007D7FF0 /* FoodConfigViewModel.swift in Sources */,
+				C3666A6F2BE58D9700BA9551 /* NotificationConfigViewModel.swift in Sources */,
+				C364B5532BB9967300AC1CB3 /* UserProducts+CoreDataClass.swift in Sources */,
+				C3DCF9AE2B9DF31A007D7FF0 /* SceneDelegate.swift in Sources */,
+				C3DCFA042B9E5AD2007D7FF0 /* NewNoteViewModel.swift in Sources */,
+				C333ABB02BA0F4DD00EA100E /* MainAppTabBarFabric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C391D64D2DFDD3DE00027440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C391D6402DFDD3DC00027440 /* TrackSugarWatch Watch App */;
+			targetProxy = C391D64C2DFDD3DE00027440 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3DCF9B92B9DF31B007D7FF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DCF9BA2B9DF31B007D7FF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C391D6502DFDD3DE00027440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TrackSugarWatch Watch App/TrackSugarWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrackSugarWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Track Sugar Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Kirill.TrackSugar;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.TrackSugar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		C391D6512DFDD3DE00027440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TrackSugarWatch Watch App/TrackSugarWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrackSugarWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Track Sugar Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Kirill.TrackSugar;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.TrackSugar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		C3DCF9BD2B9DF31B007D7FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3DCF9BE2B9DF31B007D7FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3DCF9C02B9DF31B007D7FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrackSugar/TrackSugar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackSugar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Track Sugar";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.TrackSugar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C3DCF9C12B9DF31B007D7FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrackSugar/TrackSugar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackSugar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Track Sugar";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.TrackSugar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C391D64F2DFDD3DE00027440 /* Build configuration list for PBXNativeTarget "TrackSugarWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C391D6502DFDD3DE00027440 /* Debug */,
+				C391D6512DFDD3DE00027440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DCF9A32B9DF31A007D7FF0 /* Build configuration list for PBXProject "TrackSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DCF9BD2B9DF31B007D7FF0 /* Debug */,
+				C3DCF9BE2B9DF31B007D7FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DCF9BF2B9DF31B007D7FF0 /* Build configuration list for PBXNativeTarget "TrackSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DCF9C02B9DF31B007D7FF0 /* Debug */,
+				C3DCF9C12B9DF31B007D7FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C364B5622BBC94BA00AC1CB3 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject?ysclid=luirx05qqi68212616";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		C3666A732BE7D0DB00BA9551 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		C391D6342DFDC34800027440 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		C3DCF9C82B9DF4DB007D7FF0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C364B5632BBC94BA00AC1CB3 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5622BBC94BA00AC1CB3 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		C3666A742BE7D0DB00BA9551 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3666A732BE7D0DB00BA9551 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		C391D6352DFDC34800027440 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C391D6342DFDC34800027440 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C3DCF9C92B9DF4DB007D7FF0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3DCF9C82B9DF4DB007D7FF0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C3DCF9B42B9DF31A007D7FF0 /* TrackSugar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3DCF9B52B9DF31A007D7FF0 /* TrackSugar.xcdatamodel */,
+			);
+			currentVersion = C3DCF9B52B9DF31A007D7FF0 /* TrackSugar.xcdatamodel */;
+			path = TrackSugar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3DCF9A02B9DF31A007D7FF0 /* Project object */;
+}
